@@ -3,24 +3,24 @@ var minuteH = document.getElementById('minute');
 var secondH = document.getElementById('second');
 
 let secCount = 0;
-let minCount = 1;
+let minCount = 1; 
 let hourCount = 0;
 
 
 setInterval(function() {
     secondH.style.transform = 'rotate(' + secCount + 'deg)';
     secCount += 6;
-}, 10);
+}, 1000);
 
 setInterval(function() {
     minuteH.style.transform = 'rotate(' + minCount + 'deg)';
     minCount += 6;
-}, 600);
+}, 60000);
 
 setInterval(function() {
     hourH.style.transform = 'rotate(' + hourCount + 'deg)';
     hourCount += 30;
-}, 18000);
+}, 1800000);
     
 
 //function initClock() {
